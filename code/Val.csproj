@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>2021.4.29.3</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6564df24-7f40-4433-a857-c5562495055a</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Val</RootNamespace>
+    <AssemblyName>Val</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NsgSoft.Common">
+      <HintPath>..\..\..\Releases\NsgSoft.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.Database">
+      <HintPath>..\..\..\Releases\NsgSoft.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.DataObjects">
+      <HintPath>..\..\..\Releases\NsgSoft.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.Design">
+      <HintPath>..\..\..\Releases\NsgSoft.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.Equipment">
+      <HintPath>..\..\..\Releases\NsgSoft.Equipment.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.Forms">
+      <HintPath>..\..\..\Releases\NsgSoft.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.FormsComponents">
+      <HintPath>..\..\..\Releases\NsgSoft.FormsComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.ODBC">
+      <HintPath>..\..\..\Releases\NsgSoft.ODBC.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.ReportBase">
+      <HintPath>..\..\..\Releases\NsgSoft.ReportBase.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.ReportBuilder">
+      <HintPath>..\..\..\Releases\NsgSoft.ReportBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.ReportCompression">
+      <HintPath>..\..\..\Releases\NsgSoft.ReportCompression.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.ReportControls">
+      <HintPath>..\..\..\Releases\NsgSoft.ReportControls.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.ReportEditor">
+      <HintPath>..\..\..\Releases\NsgSoft.ReportEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.Tools">
+      <HintPath>..\..\..\Releases\NsgSoft.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="NsgSoft.Windows.iGridLib.iGrid">
+      <HintPath>..\..\..\Releases\NsgSoft.Windows.iGridLib.iGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\..\Releases\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Val.NsgInit.cs">
+      <NsgOwnerGuid>6564df24-7f40-4433-a857-c5562495055a</NsgOwnerGuid>
+      <NsgOwnerName>Val</NsgOwnerName>
+      <DependentUpon>Val.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Val.cs">
+      <NsgOwnerGuid>6564df24-7f40-4433-a857-c5562495055a</NsgOwnerGuid>
+      <NsgOwnerName>Val</NsgOwnerName>
+    </Compile>
+    <Compile Include="Program.cs">
+      <NsgOwnerGuid>6564df24-7f40-4433-a857-c5562495055a</NsgOwnerGuid>
+    </Compile>
+    <Compile Include="NsgLogo.cs">
+      <NsgOwnerGuid>6564df24-7f40-4433-a857-c5562495055a</NsgOwnerGuid>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NsgLogo.designer.cs">
+      <NsgOwnerGuid>6564df24-7f40-4433-a857-c5562495055a</NsgOwnerGuid>
+      <DependentUpon>NsgLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <NsgOwnerGuid>6564df24-7f40-4433-a857-c5562495055a</NsgOwnerGuid>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <NsgOwnerGuid>6564df24-7f40-4433-a857-c5562495055a</NsgOwnerGuid>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <None Include="app.config">
+      <NsgOwnerGuid>6564df24-7f40-4433-a857-c5562495055a</NsgOwnerGuid>
+    </None>
+    <Compile Include="Метаданные\Метаданные.NsgInit.cs">
+      <NsgOwnerGuid>4643bc92-4a00-4f89-9da3-e292cff11bdb</NsgOwnerGuid>
+      <NsgOwnerName>Метаданные</NsgOwnerName>
+      <DependentUpon>Метаданные.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Метаданные.cs">
+      <NsgOwnerGuid>4643bc92-4a00-4f89-9da3-e292cff11bdb</NsgOwnerGuid>
+      <NsgOwnerName>Метаданные</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\БазыДанныхДляОбмена\БазыДанныхДляОбмена.NsgInit.cs">
+      <NsgOwnerGuid>81589896-f9a8-475e-acd6-b0975a768f5f</NsgOwnerGuid>
+      <NsgOwnerName>БазыДанныхДляОбмена</NsgOwnerName>
+      <DependentUpon>БазыДанныхДляОбмена.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\БазыДанныхДляОбмена\БазыДанныхДляОбмена.cs">
+      <NsgOwnerGuid>81589896-f9a8-475e-acd6-b0975a768f5f</NsgOwnerGuid>
+      <NsgOwnerName>БазыДанныхДляОбмена</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ОбъектыОбмена\ОбъектыОбмена.NsgInit.cs">
+      <NsgOwnerGuid>50eb5c11-e785-4ddb-a891-bca0223d993c</NsgOwnerGuid>
+      <NsgOwnerName>ОбъектыОбмена</NsgOwnerName>
+      <DependentUpon>ОбъектыОбмена.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ОбъектыОбмена\ОбъектыОбмена.cs">
+      <NsgOwnerGuid>50eb5c11-e785-4ddb-a891-bca0223d993c</NsgOwnerGuid>
+      <NsgOwnerName>ОбъектыОбмена</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\DataAssemblyObject\DataAssemblyObject.NsgInit.cs">
+      <NsgOwnerGuid>a9bd851e-8ff6-47c7-a502-f6b35786e624</NsgOwnerGuid>
+      <NsgOwnerName>DataAssemblyObject</NsgOwnerName>
+      <DependentUpon>DataAssemblyObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\DataAssemblyObject\DataAssemblyObject.cs">
+      <NsgOwnerGuid>a9bd851e-8ff6-47c7-a502-f6b35786e624</NsgOwnerGuid>
+      <NsgOwnerName>DataAssemblyObject</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ТипыОбмена\ТипыОбмена.NsgInit.cs">
+      <NsgOwnerGuid>b64d6759-a27a-40d9-a34d-e67320c953a8</NsgOwnerGuid>
+      <NsgOwnerName>ТипыОбмена</NsgOwnerName>
+      <DependentUpon>ТипыОбмена.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ТипыОбмена\ТипыОбмена.cs">
+      <NsgOwnerGuid>b64d6759-a27a-40d9-a34d-e67320c953a8</NsgOwnerGuid>
+      <NsgOwnerName>ТипыОбмена</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ОбменДанными\ОбменДанными.NsgInit.cs">
+      <NsgOwnerGuid>f573e05a-6a2d-4fd7-a9dc-919fa9c22983</NsgOwnerGuid>
+      <NsgOwnerName>ОбменДанными</NsgOwnerName>
+      <DependentUpon>ОбменДанными.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ОбменДанными\ОбменДанными.cs">
+      <NsgOwnerGuid>f573e05a-6a2d-4fd7-a9dc-919fa9c22983</NsgOwnerGuid>
+      <NsgOwnerName>ОбменДанными</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПротоколОбмена\ПротоколОбмена.NsgInit.cs">
+      <NsgOwnerGuid>f6a81762-6617-4a2d-9b76-9533165f834d</NsgOwnerGuid>
+      <NsgOwnerName>ПротоколОбмена</NsgOwnerName>
+      <DependentUpon>ПротоколОбмена.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПротоколОбмена\ПротоколОбмена.cs">
+      <NsgOwnerGuid>f6a81762-6617-4a2d-9b76-9533165f834d</NsgOwnerGuid>
+      <NsgOwnerName>ПротоколОбмена</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ИмпортДанных\ИмпортДанных.NsgInit.cs">
+      <NsgOwnerGuid>a3605ce3-4380-4e9a-a753-13f6b26c623d</NsgOwnerGuid>
+      <NsgOwnerName>ИмпортДанных</NsgOwnerName>
+      <DependentUpon>ИмпортДанных.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ИмпортДанных\ИмпортДанных.cs">
+      <NsgOwnerGuid>a3605ce3-4380-4e9a-a753-13f6b26c623d</NsgOwnerGuid>
+      <NsgOwnerName>ИмпортДанных</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\НастройкиКаналаОбмена\НастройкиКаналаОбмена.NsgInit.cs">
+      <NsgOwnerGuid>cdf126a0-729e-4fb2-a256-efe73c1c6687</NsgOwnerGuid>
+      <NsgOwnerName>НастройкиКаналаОбмена</NsgOwnerName>
+      <DependentUpon>НастройкиКаналаОбмена.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\НастройкиКаналаОбмена\НастройкиКаналаОбмена.cs">
+      <NsgOwnerGuid>cdf126a0-729e-4fb2-a256-efe73c1c6687</NsgOwnerGuid>
+      <NsgOwnerName>НастройкиКаналаОбмена</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПравилаОбменаДанными\ПравилаОбменаДанными.NsgInit.cs">
+      <NsgOwnerGuid>78fc6eea-1206-4695-a87c-185d1bb45903</NsgOwnerGuid>
+      <NsgOwnerName>ПравилаОбменаДанными</NsgOwnerName>
+      <DependentUpon>ПравилаОбменаДанными.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПравилаОбменаДанными\ПравилаОбменаДанными.cs">
+      <NsgOwnerGuid>78fc6eea-1206-4695-a87c-185d1bb45903</NsgOwnerGuid>
+      <NsgOwnerName>ПравилаОбменаДанными</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\СервисноеОбслуживание\СервисноеОбслуживание.NsgInit.cs">
+      <NsgOwnerGuid>444e6ffb-a04c-4c82-af16-70cce67bf16b</NsgOwnerGuid>
+      <NsgOwnerName>СервисноеОбслуживание</NsgOwnerName>
+      <DependentUpon>СервисноеОбслуживание.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\СервисноеОбслуживание\СервисноеОбслуживание.cs">
+      <NsgOwnerGuid>444e6ffb-a04c-4c82-af16-70cce67bf16b</NsgOwnerGuid>
+      <NsgOwnerName>СервисноеОбслуживание</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ВидыДвижений\ВидыДвижений.NsgInit.cs">
+      <NsgOwnerGuid>ade841ca-3367-4e72-83ce-acc967c63105</NsgOwnerGuid>
+      <NsgOwnerName>ВидыДвижений</NsgOwnerName>
+      <DependentUpon>ВидыДвижений.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ВидыДвижений\ВидыДвижений.cs">
+      <NsgOwnerGuid>ade841ca-3367-4e72-83ce-acc967c63105</NsgOwnerGuid>
+      <NsgOwnerName>ВидыДвижений</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\СостоянияОбъекта\СостоянияОбъекта.NsgInit.cs">
+      <NsgOwnerGuid>583e4000-1f9d-49a7-abae-d512521d8789</NsgOwnerGuid>
+      <NsgOwnerName>СостоянияОбъекта</NsgOwnerName>
+      <DependentUpon>СостоянияОбъекта.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\СостоянияОбъекта\СостоянияОбъекта.cs">
+      <NsgOwnerGuid>583e4000-1f9d-49a7-abae-d512521d8789</NsgOwnerGuid>
+      <NsgOwnerName>СостоянияОбъекта</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ОбщийЖурнал\ОбщийЖурнал.NsgInit.cs">
+      <NsgOwnerGuid>b613d9a0-0b2c-4c97-9872-3459818410e0</NsgOwnerGuid>
+      <NsgOwnerName>ОбщийЖурнал</NsgOwnerName>
+      <DependentUpon>ОбщийЖурнал.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ОбщийЖурнал\ОбщийЖурнал.cs">
+      <NsgOwnerGuid>b613d9a0-0b2c-4c97-9872-3459818410e0</NsgOwnerGuid>
+      <NsgOwnerName>ОбщийЖурнал</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\НеактуальностьИтоговРегистров\НеактуальностьИтоговРегистров.NsgInit.cs">
+      <NsgOwnerGuid>ed78c268-18fa-4b75-8dfe-e55f7773a40e</NsgOwnerGuid>
+      <NsgOwnerName>НеактуальностьИтоговРегистров</NsgOwnerName>
+      <DependentUpon>НеактуальностьИтоговРегистров.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\НеактуальностьИтоговРегистров\НеактуальностьИтоговРегистров.cs">
+      <NsgOwnerGuid>ed78c268-18fa-4b75-8dfe-e55f7773a40e</NsgOwnerGuid>
+      <NsgOwnerName>НеактуальностьИтоговРегистров</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПечатныеФормы\ПечатныеФормы.NsgInit.cs">
+      <NsgOwnerGuid>7668c909-da5f-4a1f-8798-f1de0a6729a4</NsgOwnerGuid>
+      <NsgOwnerName>ПечатныеФормы</NsgOwnerName>
+      <DependentUpon>ПечатныеФормы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПечатныеФормы\ПечатныеФормы.cs">
+      <NsgOwnerGuid>7668c909-da5f-4a1f-8798-f1de0a6729a4</NsgOwnerGuid>
+      <NsgOwnerName>ПечатныеФормы</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\КорректировкаРегистра\КорректировкаРегистра.NsgInit.cs">
+      <NsgOwnerGuid>81c6d699-ec5b-4b38-bd72-5cb645ea528c</NsgOwnerGuid>
+      <NsgOwnerName>КорректировкаРегистра</NsgOwnerName>
+      <DependentUpon>КорректировкаРегистра.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\КорректировкаРегистра\КорректировкаРегистра.cs">
+      <NsgOwnerGuid>81c6d699-ec5b-4b38-bd72-5cb645ea528c</NsgOwnerGuid>
+      <NsgOwnerName>КорректировкаРегистра</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПечатныеФормы\СервисПечатныеФормыДвижения.NsgInit.cs">
+      <NsgOwnerGuid>b80dfed3-72a7-4363-9c09-f33ffb7709ef</NsgOwnerGuid>
+      <NsgOwnerName>СервисПечатныеФормыДвижения</NsgOwnerName>
+      <DependentUpon>СервисПечатныеФормыДвижения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПечатныеФормы\СервисПечатныеФормыДвижения.cs">
+      <NsgOwnerGuid>b80dfed3-72a7-4363-9c09-f33ffb7709ef</NsgOwnerGuid>
+      <NsgOwnerName>СервисПечатныеФормыДвижения</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПечатныеФормы\СервисПечатныеФормыДвижения.Строка.NsgInit.cs">
+      <NsgOwnerGuid>b80dfed3-72a7-4363-9c09-f33ffb7709ef</NsgOwnerGuid>
+      <NsgOwnerName>СервисПечатныеФормыДвижения</NsgOwnerName>
+      <DependentUpon>СервисПечатныеФормыДвижения.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПечатныеФормы\СервисПечатныеФормыДвижения.Строка.cs">
+      <NsgOwnerGuid>b80dfed3-72a7-4363-9c09-f33ffb7709ef</NsgOwnerGuid>
+      <NsgOwnerName>СервисПечатныеФормыДвижения</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\_SystemTables\PeriodicTable\PeriodicTable.NsgInit.cs">
+      <NsgOwnerGuid>57bce3dc-6748-4224-b102-25c367c59063</NsgOwnerGuid>
+      <NsgOwnerName>PeriodicTable</NsgOwnerName>
+      <DependentUpon>PeriodicTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\_SystemTables\PeriodicTable\PeriodicTable.cs">
+      <NsgOwnerGuid>57bce3dc-6748-4224-b102-25c367c59063</NsgOwnerGuid>
+      <NsgOwnerName>PeriodicTable</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\_SystemTables\PeriodicTable\PeriodicTable.Строка.NsgInit.cs">
+      <NsgOwnerGuid>57bce3dc-6748-4224-b102-25c367c59063</NsgOwnerGuid>
+      <NsgOwnerName>PeriodicTable</NsgOwnerName>
+      <DependentUpon>PeriodicTable.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\_SystemTables\PeriodicTable\PeriodicTable.Строка.cs">
+      <NsgOwnerGuid>57bce3dc-6748-4224-b102-25c367c59063</NsgOwnerGuid>
+      <NsgOwnerName>PeriodicTable</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\РазрешениеОперацииПользователя\РазрешениеОперацииПользователя.NsgInit.cs">
+      <NsgOwnerGuid>eefdc540-388a-463a-b752-18463f332020</NsgOwnerGuid>
+      <NsgOwnerName>РазрешениеОперацииПользователя</NsgOwnerName>
+      <DependentUpon>РазрешениеОперацииПользователя.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\РазрешениеОперацииПользователя\РазрешениеОперацииПользователя.cs">
+      <NsgOwnerGuid>eefdc540-388a-463a-b752-18463f332020</NsgOwnerGuid>
+      <NsgOwnerName>РазрешениеОперацииПользователя</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ДействияПользователей\ДействияПользователей.NsgInit.cs">
+      <NsgOwnerGuid>e001598f-6f00-430d-9056-cd84fd4011d2</NsgOwnerGuid>
+      <NsgOwnerName>ДействияПользователей</NsgOwnerName>
+      <DependentUpon>ДействияПользователей.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ДействияПользователей\ДействияПользователей.cs">
+      <NsgOwnerGuid>e001598f-6f00-430d-9056-cd84fd4011d2</NsgOwnerGuid>
+      <NsgOwnerName>ДействияПользователей</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ТипСообщения\ТипСообщения.NsgInit.cs">
+      <NsgOwnerGuid>094d51f9-14e5-45b8-a871-21627314909e</NsgOwnerGuid>
+      <NsgOwnerName>ТипСообщения</NsgOwnerName>
+      <DependentUpon>ТипСообщения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ТипСообщения\ТипСообщения.cs">
+      <NsgOwnerGuid>094d51f9-14e5-45b8-a871-21627314909e</NsgOwnerGuid>
+      <NsgOwnerName>ТипСообщения</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\Пользователи\РолиПользователя.NsgInit.cs">
+      <NsgOwnerGuid>140782ee-d205-44eb-ad68-6db4846cc2a7</NsgOwnerGuid>
+      <NsgOwnerName>РолиПользователя</NsgOwnerName>
+      <DependentUpon>РолиПользователя.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\Пользователи\РолиПользователя.cs">
+      <NsgOwnerGuid>140782ee-d205-44eb-ad68-6db4846cc2a7</NsgOwnerGuid>
+      <NsgOwnerName>РолиПользователя</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\Пользователи\РолиПользователя.Строка.NsgInit.cs">
+      <NsgOwnerGuid>140782ee-d205-44eb-ad68-6db4846cc2a7</NsgOwnerGuid>
+      <NsgOwnerName>РолиПользователя</NsgOwnerName>
+      <DependentUpon>РолиПользователя.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\Пользователи\РолиПользователя.Строка.cs">
+      <NsgOwnerGuid>140782ee-d205-44eb-ad68-6db4846cc2a7</NsgOwnerGuid>
+      <NsgOwnerName>РолиПользователя</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\Приоритет\Приоритет.NsgInit.cs">
+      <NsgOwnerGuid>d957719c-7ea4-4114-95bc-8603ffd26b82</NsgOwnerGuid>
+      <NsgOwnerName>Приоритет</NsgOwnerName>
+      <DependentUpon>Приоритет.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\Приоритет\Приоритет.cs">
+      <NsgOwnerGuid>d957719c-7ea4-4114-95bc-8603ffd26b82</NsgOwnerGuid>
+      <NsgOwnerName>Приоритет</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ТипЗадачиНаСервере\ТипЗадачиНаСервере.NsgInit.cs">
+      <NsgOwnerGuid>604e062e-3d5c-4713-b154-33d25beed969</NsgOwnerGuid>
+      <NsgOwnerName>ТипЗадачиНаСервере</NsgOwnerName>
+      <DependentUpon>ТипЗадачиНаСервере.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ТипЗадачиНаСервере\ТипЗадачиНаСервере.cs">
+      <NsgOwnerGuid>604e062e-3d5c-4713-b154-33d25beed969</NsgOwnerGuid>
+      <NsgOwnerName>ТипЗадачиНаСервере</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\Пользователи\Пользователи.NsgInit.cs">
+      <NsgOwnerGuid>a3cf809b-96d2-4d30-a0a9-1f062f50a5ec</NsgOwnerGuid>
+      <NsgOwnerName>Пользователи</NsgOwnerName>
+      <DependentUpon>Пользователи.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\Пользователи\Пользователи.cs">
+      <NsgOwnerGuid>a3cf809b-96d2-4d30-a0a9-1f062f50a5ec</NsgOwnerGuid>
+      <NsgOwnerName>Пользователи</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\СписокСообщений\СписокСообщений.NsgInit.cs">
+      <NsgOwnerGuid>8eccb162-98b2-4bf1-a3d4-1a4b81d48680</NsgOwnerGuid>
+      <NsgOwnerName>СписокСообщений</NsgOwnerName>
+      <DependentUpon>СписокСообщений.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\СписокСообщений\СписокСообщений.cs">
+      <NsgOwnerGuid>8eccb162-98b2-4bf1-a3d4-1a4b81d48680</NsgOwnerGuid>
+      <NsgOwnerName>СписокСообщений</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\СервернаяЗадача\СервернаяЗадача.NsgInit.cs">
+      <NsgOwnerGuid>f08247c9-823f-4587-9510-3ec9b713a5b6</NsgOwnerGuid>
+      <NsgOwnerName>СервернаяЗадача</NsgOwnerName>
+      <DependentUpon>СервернаяЗадача.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\СервернаяЗадача\СервернаяЗадача.cs">
+      <NsgOwnerGuid>f08247c9-823f-4587-9510-3ec9b713a5b6</NsgOwnerGuid>
+      <NsgOwnerName>СервернаяЗадача</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\НастройкиПользователей\НастройкиПользователей.NsgInit.cs">
+      <NsgOwnerGuid>f5c947d8-cee8-423b-bed2-59f7c16f55b1</NsgOwnerGuid>
+      <NsgOwnerName>НастройкиПользователей</NsgOwnerName>
+      <DependentUpon>НастройкиПользователей.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\НастройкиПользователей\НастройкиПользователей.cs">
+      <NsgOwnerGuid>f5c947d8-cee8-423b-bed2-59f7c16f55b1</NsgOwnerGuid>
+      <NsgOwnerName>НастройкиПользователей</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\НастройкиПользователей\НастройкиПользователей.Строка.NsgInit.cs">
+      <NsgOwnerGuid>f5c947d8-cee8-423b-bed2-59f7c16f55b1</NsgOwnerGuid>
+      <NsgOwnerName>НастройкиПользователей</NsgOwnerName>
+      <DependentUpon>НастройкиПользователей.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\НастройкиПользователей\НастройкиПользователей.Строка.cs">
+      <NsgOwnerGuid>f5c947d8-cee8-423b-bed2-59f7c16f55b1</NsgOwnerGuid>
+      <NsgOwnerName>НастройкиПользователей</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПраваПользователей\ПраваПользователей.NsgInit.cs">
+      <NsgOwnerGuid>87e9c86a-1bf9-475a-b55d-77184fd5ae4a</NsgOwnerGuid>
+      <NsgOwnerName>ПраваПользователей</NsgOwnerName>
+      <DependentUpon>ПраваПользователей.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПраваПользователей\ПраваПользователей.cs">
+      <NsgOwnerGuid>87e9c86a-1bf9-475a-b55d-77184fd5ae4a</NsgOwnerGuid>
+      <NsgOwnerName>ПраваПользователей</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ОбновленияСистемы\ОбновленияСистемы.NsgInit.cs">
+      <NsgOwnerGuid>8d047f7e-185d-46a8-b46c-4d806c7aa715</NsgOwnerGuid>
+      <NsgOwnerName>ОбновленияСистемы</NsgOwnerName>
+      <DependentUpon>ОбновленияСистемы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ОбновленияСистемы\ОбновленияСистемы.cs">
+      <NsgOwnerGuid>8d047f7e-185d-46a8-b46c-4d806c7aa715</NsgOwnerGuid>
+      <NsgOwnerName>ОбновленияСистемы</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\РольПользователяМеню\ТаблицаРолиМенюПользователя.NsgInit.cs">
+      <NsgOwnerGuid>d26c7821-468e-4bc0-b542-c3085a5130e5</NsgOwnerGuid>
+      <NsgOwnerName>ТаблицаРолиМенюПользователя</NsgOwnerName>
+      <DependentUpon>ТаблицаРолиМенюПользователя.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\РольПользователяМеню\ТаблицаРолиМенюПользователя.cs">
+      <NsgOwnerGuid>d26c7821-468e-4bc0-b542-c3085a5130e5</NsgOwnerGuid>
+      <NsgOwnerName>ТаблицаРолиМенюПользователя</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\РольПользователяМеню\ТаблицаРолиМенюПользователя.Строка.NsgInit.cs">
+      <NsgOwnerGuid>d26c7821-468e-4bc0-b542-c3085a5130e5</NsgOwnerGuid>
+      <NsgOwnerName>ТаблицаРолиМенюПользователя</NsgOwnerName>
+      <DependentUpon>ТаблицаРолиМенюПользователя.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\РольПользователяМеню\ТаблицаРолиМенюПользователя.Строка.cs">
+      <NsgOwnerGuid>d26c7821-468e-4bc0-b542-c3085a5130e5</NsgOwnerGuid>
+      <NsgOwnerName>ТаблицаРолиМенюПользователя</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ДействиеЭлементаМеню\ДействиеЭлементаМеню.NsgInit.cs">
+      <NsgOwnerGuid>e665d613-dcff-4f3c-a611-2eabb0dc7b75</NsgOwnerGuid>
+      <NsgOwnerName>ДействиеЭлементаМеню</NsgOwnerName>
+      <DependentUpon>ДействиеЭлементаМеню.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ДействиеЭлементаМеню\ДействиеЭлементаМеню.cs">
+      <NsgOwnerGuid>e665d613-dcff-4f3c-a611-2eabb0dc7b75</NsgOwnerGuid>
+      <NsgOwnerName>ДействиеЭлементаМеню</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\РольПользователяМеню\РольПользователяМеню.NsgInit.cs">
+      <NsgOwnerGuid>a734cac7-8959-4cc2-89aa-d79fd9e75ed8</NsgOwnerGuid>
+      <NsgOwnerName>РольПользователяМеню</NsgOwnerName>
+      <DependentUpon>РольПользователяМеню.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\РольПользователяМеню\РольПользователяМеню.cs">
+      <NsgOwnerGuid>a734cac7-8959-4cc2-89aa-d79fd9e75ed8</NsgOwnerGuid>
+      <NsgOwnerName>РольПользователяМеню</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПраваПользователей\СервисПраваПользователейДвижения.NsgInit.cs">
+      <NsgOwnerGuid>fefbc1b6-bab3-4267-a436-37eb9f32f7a1</NsgOwnerGuid>
+      <NsgOwnerName>СервисПраваПользователейДвижения</NsgOwnerName>
+      <DependentUpon>СервисПраваПользователейДвижения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПраваПользователей\СервисПраваПользователейДвижения.cs">
+      <NsgOwnerGuid>fefbc1b6-bab3-4267-a436-37eb9f32f7a1</NsgOwnerGuid>
+      <NsgOwnerName>СервисПраваПользователейДвижения</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПраваПользователей\СервисПраваПользователейДвижения.Строка.NsgInit.cs">
+      <NsgOwnerGuid>fefbc1b6-bab3-4267-a436-37eb9f32f7a1</NsgOwnerGuid>
+      <NsgOwnerName>СервисПраваПользователейДвижения</NsgOwnerName>
+      <DependentUpon>СервисПраваПользователейДвижения.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ПраваПользователей\СервисПраваПользователейДвижения.Строка.cs">
+      <NsgOwnerGuid>fefbc1b6-bab3-4267-a436-37eb9f32f7a1</NsgOwnerGuid>
+      <NsgOwnerName>СервисПраваПользователейДвижения</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ЭлементМенюПользователя\ТаблицаЭлементаМенюПользователя.NsgInit.cs">
+      <NsgOwnerGuid>1cd8e8ff-1303-4f09-8f3a-25b184544dd6</NsgOwnerGuid>
+      <NsgOwnerName>ТаблицаЭлементаМенюПользователя</NsgOwnerName>
+      <DependentUpon>ТаблицаЭлементаМенюПользователя.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ЭлементМенюПользователя\ТаблицаЭлементаМенюПользователя.cs">
+      <NsgOwnerGuid>1cd8e8ff-1303-4f09-8f3a-25b184544dd6</NsgOwnerGuid>
+      <NsgOwnerName>ТаблицаЭлементаМенюПользователя</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ЭлементМенюПользователя\ТаблицаЭлементаМенюПользователя.Строка.NsgInit.cs">
+      <NsgOwnerGuid>1cd8e8ff-1303-4f09-8f3a-25b184544dd6</NsgOwnerGuid>
+      <NsgOwnerName>ТаблицаЭлементаМенюПользователя</NsgOwnerName>
+      <DependentUpon>ТаблицаЭлементаМенюПользователя.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ЭлементМенюПользователя\ТаблицаЭлементаМенюПользователя.Строка.cs">
+      <NsgOwnerGuid>1cd8e8ff-1303-4f09-8f3a-25b184544dd6</NsgOwnerGuid>
+      <NsgOwnerName>ТаблицаЭлементаМенюПользователя</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ЭлементМенюПользователя\ЭлементМенюПользователя.NsgInit.cs">
+      <NsgOwnerGuid>e8f3674a-8af9-41e3-8c0f-4c16d0e7e971</NsgOwnerGuid>
+      <NsgOwnerName>ЭлементМенюПользователя</NsgOwnerName>
+      <DependentUpon>ЭлементМенюПользователя.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Сервис\ЭлементМенюПользователя\ЭлементМенюПользователя.cs">
+      <NsgOwnerGuid>e8f3674a-8af9-41e3-8c0f-4c16d0e7e971</NsgOwnerGuid>
+      <NsgOwnerName>ЭлементМенюПользователя</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Деньги\Валюты\Валюты.NsgInit.cs">
+      <NsgOwnerGuid>080aa76f-418e-4bd8-8cda-814a2a0a4dfd</NsgOwnerGuid>
+      <NsgOwnerName>Валюты</NsgOwnerName>
+      <DependentUpon>Валюты.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Деньги\Валюты\Валюты.cs">
+      <NsgOwnerGuid>080aa76f-418e-4bd8-8cda-814a2a0a4dfd</NsgOwnerGuid>
+      <NsgOwnerName>Валюты</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Деньги\ИсторияКурсов\ИсторияКурсов.NsgInit.cs">
+      <NsgOwnerGuid>e60d113e-8146-49d6-a6e9-1ed6e8cc3b3b</NsgOwnerGuid>
+      <NsgOwnerName>ИсторияКурсов</NsgOwnerName>
+      <DependentUpon>ИсторияКурсов.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Деньги\ИсторияКурсов\ИсторияКурсов.cs">
+      <NsgOwnerGuid>e60d113e-8146-49d6-a6e9-1ed6e8cc3b3b</NsgOwnerGuid>
+      <NsgOwnerName>ИсторияКурсов</NsgOwnerName>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Метаданные\Деньги\ЗагрузкаКурсов\ЗагрузкаКурсов.NsgInit.cs">
+      <NsgOwnerGuid>f0892427-02ff-400c-91fe-e5a96cad1858</NsgOwnerGuid>
+      <NsgOwnerName>ЗагрузкаКурсов</NsgOwnerName>
+      <DependentUpon>ЗагрузкаКурсов.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Деньги\ЗагрузкаКурсов\ЗагрузкаКурсов.cs">
+      <NsgOwnerGuid>f0892427-02ff-400c-91fe-e5a96cad1858</NsgOwnerGuid>
+      <NsgOwnerName>ЗагрузкаКурсов</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Деньги\ЗагрузкаКурсов\Форма.Designer.cs">
+      <NsgOwnerGuid>f0892427-02ff-400c-91fe-e5a96cad1858</NsgOwnerGuid>
+      <DependentUpon>Форма.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Деньги\ЗагрузкаКурсов\Форма.cs">
+      <NsgOwnerGuid>f0892427-02ff-400c-91fe-e5a96cad1858</NsgOwnerGuid>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Метаданные\Деньги\ЗагрузкаКурсов\Форма.resx">
+      <NsgOwnerGuid>f0892427-02ff-400c-91fe-e5a96cad1858</NsgOwnerGuid>
+      <DependentUpon>Форма.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
